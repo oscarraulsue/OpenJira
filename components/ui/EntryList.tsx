@@ -42,7 +42,7 @@ export const EntryList:FC<Props> = ({ status }) => {
             onDragOver={ allowDrop }
             className={ isDragging ? styles.dragging : '' }
         >
-            <Paper sx={{ height: 'calc(100vh - 180px)', overflow: 'scroll', backgroundColor: 'transparent', padding: '3px 5px'  }}>
+            <Paper className={styles.contenedor} sx={{ height: status === 'pending' ? 'calc(100vh - 215px)' : 'calc(100vh - 165px)', overflowY: 'scroll', backgroundColor: 'transparent', padding: '3px 5px'  }}>
 
                 <List sx={{ opacity: isDragging ? 0.2 : 1, transition: 'all .3s' }}> 
                     {

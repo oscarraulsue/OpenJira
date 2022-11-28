@@ -6,3 +6,24 @@
     border: 1px dashed white;
 }
 
+
+.contenedor::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.contenedor::-webkit-scrollbar:vertical {
+    width:5px;
+}
+
+.contenedor::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.contenedor::-webkit-scrollbar-thumb {
+    background-color: #90caf9;
+    border-radius: 20px;
+}
+
+.contenedor::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
